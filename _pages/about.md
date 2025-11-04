@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Highly accomplished Software Engineer with extensive experience in C/C++, C#, Android development, web development using Python and Django, and application security analysis. Adept at designing, developing, and deploying robust, high-performance software solutions across diverse domains. Possesses deep expertise in object-oriented programming, multi-threaded applications, and secure coding practices. Skilled at identifying and mitigating security vulnerabilities, ensuring software integrity and compliance with industry standards.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
