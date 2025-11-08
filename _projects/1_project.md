@@ -1,25 +1,15 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Negaremap
+description: Negaremap Application
+img: assets/img/logo.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The Negar Remap software is considered the only native application and platform for ECU dump remapping, with all its options and features in Persian language. One of the most important technical problems for mechanics and students in the automotive field is the lack of specialized software for ECU remapping in Persian with a user-friendly interface. On the other hand, learning the existing software is extremely time-consuming due to the high complexity of foreign examples. The terms used in foreign remapping applications are specialized, and learning these terms requires a lot of time and effort.
+The Negar Remap software, with its Persian language and user-friendly interface, can meet the needs of all users at various levels, from beginners to professionals. All remapping tables in the Negar Remap software are displayed in a separated manner, allowing you to edit them with complete peace of mind. After making the desired edits and before applying the changes, there is the ability to compare between the two dump states. As a result, before uploading the dump to the ECU, you can check the harmonic status of the changes. The automatic and advanced checksum feature is one of the notable capabilities of this Persian software, which is available to users for free.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -37,7 +27,7 @@ To give your project a background in the portfolio page, just add the img tag to
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/negaremap1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
