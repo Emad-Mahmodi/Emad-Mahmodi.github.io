@@ -135,25 +135,25 @@
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "A drift aware adaptive method based on minimum uncertainty for anomaly detection in social networking",
+      "publisher": "Expert Systems with Applications",
+      "releaseDate": "2020/8/19",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417420306850",
+      "summary": "We present concept drift detection based on online learning algorithms. Our approach provides an adaptive learning system for anomaly detection in data stream. Minimum uncertainty employed to combining online learning algorithm. Anomaly in social network data stream employed as a real world concept drift benchmark."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "A novel trust computation method based on user ratings to improve the recommendation",
+      "publisher": "Interactions",
+      "releaseDate": "2020-01-01",
+      "url": "https://www.ije.ir/article_104607.html",
+      "summary": "This work presents a method for computing implicit trust based on user ratings, in which four influential factors including Similarity, Confidence, Analogous Opinion, and Distance are utilized to achieve trust. For computing users’ similarity, the Pearson Correlation Coefficient measure was applied."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "UDIS: Enhancing Collaborative Filtering with Fusion of Dimensionality Reduction and Semantic Similarity",
+      "publisher": "Electronics",
+      "releaseDate": "2024/10/16",
+      "url": "https://www.mdpi.com/2079-9292/13/20/4073",
+      "summary": "This paper proposes a novel approach to address this issue and enhance RS performance. By integrating user demographic data, singular value decomposition (SVD) clustering, and semantic similarity in collaborative filtering (CF), we introduce the UDIS method..."
     }
   ],
   "skills": [
