@@ -158,18 +158,31 @@
   ],
   "skills": [
     {
-      "name": "Physics",
+      "name": "Software engineering (Data scientist)",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "LLM",
+        "RAG",
+        "Prompt engineering",
+        "Deep learning",
+        "Deep reinforcement learning"
+      ]
+    },
+    {
+      "name": "Programming",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "C/C++",
+        "Python",
+        "Matlab",
+        "Java",
+        "Java script",
+        "html/CSS"
       ]
     }
+    
+
   ],
   "languages": [
     {
@@ -184,23 +197,24 @@
     }
     
   ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
+  // "interests": [
+  //   {
+  //     "name": "Physics",
+  //     "icon": "fa-solid fa-tag",
+  //     "keywords": [
+  //       "Quantum Mechanics",
+  //       "Quantum Computing",
+  //       "Quantum Information",
+  //       "Quantum Cryptography",
+  //       "Quantum Communication",
+  //       "Quantum Teleportation"
+  //     ]
+  //   }
+  // ],
   "references": [
     {
-      "name": "Professor John Doe",
+      "name": "Dr. Hadi sadoghi Yazdi",
+      "url" : "google.com",
       "icon": "fa-solid fa-laptop",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
