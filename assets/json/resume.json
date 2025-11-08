@@ -1,24 +1,25 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "ٍEmad Mahmodi",
+    //"label": "Scientist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "emad.mahmodi.eng@gmail.com",
+    "phone": "+989113002150",
+    "url": "https://emad-mahmodi.github.io/",
+    "url2": "http://emad.mahmodi.student.um.ac.ir ",
+    "summary": "ُSoftware engineer who are using AI in real word specially in Cyber security",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "Mazandaran",
+      "countryCode": "IR",
+      "region": "Amol"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        // "network": "Twitter",
+        // "username": "AlbertEinstein",
+        // "url": "https://twitter.com/AlbertEinstein"
       }
     ]
   },
@@ -31,31 +32,52 @@
       "endDate": "1955-01-01",
       "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
       "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
+      "name": "Institute for Advanced Study, Princeton University",
+      "position": "Professor of Theoretical Physics",
       "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "startDate": "1933-01-01",
+      "endDate": "1955-01-01",
+      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "highlights": ["Relativity"]
     }
   ],
+
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "The Highschool of Amol, Amin",
+      "location": "Mazandaran, Amol",
+      // "url": "https://www.uzh.ch/",
+      "area": "Diploma of Mathematics and Physics",
+      "studyType": "Diploma",
+      "startDate": "2004-01-01",
+      "endDate": "2008-01-01",
+      "score": "16.39 / 20",
+      "courses": [""]
+    },
+    {
+      "institution": "The University of Amol, Shomal, Iran",
+      "location": "Mazandaran, Amol",
+      // "url": "https://www.uzh.ch/",
+      "area": "Computer Science (Software Engineering)",
+      "studyType": "Bachelor (Bsc)",
+      "startDate": "2008-01-01",
+      "endDate": "2012-01-01",
+      "score": "14.2 / 20 BUT (The latest year Grade 17.14/20)",
+      "courses": ["Integrated online sales management system (Grade 20/20). Supervisor, Dr. Hamidreza Kohi"]
+    }
+    ,
+    {
+      "institution": "The University of Mashhad, Ferdowsi",
+      "location": "Mashhad, Iran",
+      // "url": "https://www.uzh.ch/",
+      "area": "Computer Science (Software Engineering)",
+      "studyType": "Masters (Msc)",
+      "startDate": "2017-01-01",
+      "endDate": "2014-01-01",
+      "score": "15.4 / 20 BUT (The latest year Grade 16.71/20)",
+      "courses": ["Adaptive rule base phishing detection against URL obfuscation (Grad 18/20) Supervisor, Dr. Hadi Sadoghi Yazdi, Dr. Abbas Ghaemi Bafghi "]
     }
   ],
   "awards": [
@@ -151,15 +173,16 @@
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
       "language": "English",
       "fluency": "Fluent",
       "icon": ""
+    },
+    {
+      "language": "Persian",
+      "fluency": "Native speaker",
+      "icon": ""
     }
+    
   ],
   "interests": [
     {
