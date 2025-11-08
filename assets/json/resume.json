@@ -156,17 +156,53 @@
       "summary": "This paper proposes a novel approach to address this issue and enhance RS performance. By integrating user demographic data, singular value decomposition (SVD) clustering, and semantic similarity in collaborative filtering (CF), we introduce the UDIS method..."
     }
   ],
-  "skills": [
+  
+  "languages": [
     {
-      "name": "Software engineering (Data scientist)",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "language": "English",
+      "fluency": "Fluent",
+      "icon": ""
+    },
+    {
+      "language": "Persian",
+      "fluency": "Native speaker",
+      "icon": ""
+    }
+    
+  ],
+  "interests": [
+    {
+      "name": "Machine Learning",
+      "icon": "fa-solid fa-tag" , 
       "keywords": [
         "LLM",
         "RAG",
         "Prompt engineering",
         "Deep learning",
         "Deep reinforcement learning"
+      ]
+    },
+    {
+      "name": "Cyber security",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Social network",
+        "Mobile application",
+        "PC application",
+        "ECU Dump (Road-Vehicle)"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Software engineering",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Make / Cmake",
+        "Pytorch / keras",
+        "Ghidra / IDA / Frida",
+        "Django"
       ]
     },
     {
@@ -181,40 +217,10 @@
         "html/CSS"
       ]
     }
-    
-
   ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    },
-    {
-      "language": "Persian",
-      "fluency": "Native speaker",
-      "icon": ""
-    }
-    
-  ],
-  // "interests": [
-  //   {
-  //     "name": "Physics",
-  //     "icon": "fa-solid fa-tag",
-  //     "keywords": [
-  //       "Quantum Mechanics",
-  //       "Quantum Computing",
-  //       "Quantum Information",
-  //       "Quantum Cryptography",
-  //       "Quantum Communication",
-  //       "Quantum Teleportation"
-  //     ]
-  //   }
-  // ],
   "references": [
     {
       "name": "Dr. Hadi sadoghi Yazdi",
-      "url" : "google.com",
       "icon": "fa-solid fa-laptop",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
