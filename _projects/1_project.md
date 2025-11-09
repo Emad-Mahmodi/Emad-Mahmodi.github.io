@@ -57,15 +57,75 @@ Here's the code for the last row of images above:
 
 {% raw %}
 
-```html
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/ng6.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/ng7.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm-12 mt-3 mt-md-0">
+    <div class="card border-0 shadow-sm">
+      <!-- Header -->
+      <div class="card-header bg-primary text-white text-center py-3">
+        <h5 class="mb-0 fw-bold">Key Features of NegarRemap Software</h5>
+      </div>
+
+      <!-- List -->
+      <div class="card-body p-0">
+        <ul class="list-group list-group-flush">
+          <!-- 1. Dropdown item -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Advanced identification of ECU dump files
+          </li>
+
+          <!-- 2 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Full display of map tables for easy tuning
+          </li>
+
+          <!-- 3 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Professional comparison of two dump files
+          </li>
+
+          <!-- 4 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Complete separation of map tables
+          </li>
+
+          <!-- 5 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Display of changes in map tables in a separate window
+          </li>
+
+          <!-- 6 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Possibility to create a backup copy of the dump
+          </li>
+
+          <!-- 7 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Possibility to create a custom checksum
+          </li>
+
+          <!-- 8 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Display of changes in map tables in a separate window
+          </li>
+
+          <!-- 9 – highlighted -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Possibility to add or remove maps without affecting others
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
-```
+
 
 {% endraw %}
