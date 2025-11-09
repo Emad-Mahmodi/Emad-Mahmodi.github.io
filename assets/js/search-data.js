@@ -445,8 +445,8 @@ ninja.data = [{
           description: "Negaremap Application",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
+            },},{id: "projects-ecuprog",
+          title: 'ECUProg',
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
