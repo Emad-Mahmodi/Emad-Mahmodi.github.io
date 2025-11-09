@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 2
+title: ECUProg
 description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+img: assets/img/prog1.PNG
 importance: 2
 category: work
 giscus_comments: true
@@ -20,6 +20,93 @@ To give your project a background in the portfolio page, just add the img tag to
     description: a project with a background image
     img: /assets/img/12.jpg
     ---
+<div class="row justify-content-sm-center">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    <div class="card border-0 shadow-sm">
+      <!-- Header -->
+      <div class="card-header bg-primary text-white text-center py-3">
+        <h5 class="mb-0 fw-bold">Key Features of ECUProg Software</h5>
+      </div>
+
+      <!-- List -->
+      <div class="card-body p-0">
+        <ul class="list-group list-group-flush">
+          <!-- 1 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Support for automotive programming protocols: OBD, TRICORE, JTAG, KTAG, MBUS, ISP, USART, MPC, DENSO, BDM, and more
+          </li>
+
+          <!-- 2 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Support for future-generation protocols
+          </li>
+
+          <!-- 3 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Powerful and advanced for programming various ECUs and vehicle control units from domestic and international manufacturers
+          </li>
+
+          <!-- 4 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Advanced and specialized download, conversion, tuning, and remapping via OBD without needing a dump — intelligently with automatic identification
+          </li>
+
+          <!-- 5 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Specialized and advanced software for modifying ECU tables to perform various professional and advanced tuning manually
+          </li>
+
+          <!-- 6 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Odometer correction for ECU and instrument cluster via JTAG, OBDII, KTAG, MBUS, DENSO, and other methods
+          </li>
+
+          <!-- 7 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Advanced Tachosoft software included
+          </li>
+
+          <!-- 8 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Reading switch codes from ECUs via JTAG, ISP EEPROM, OBD, and other methods
+          </li>
+
+          <!-- 9 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Programming and clearing of domestic and international airbag modules
+          </li>
+
+          <!-- 10 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Powerful module for decoding various dumps (with automatic checksum calculation)
+          </li>
+
+          <!-- 11 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Hardware testing capability to ensure device functionality without needing to send it to the manufacturer
+          </li>
+
+          <!-- 12 -->
+          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
+            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
+            Fast and online software updates
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
