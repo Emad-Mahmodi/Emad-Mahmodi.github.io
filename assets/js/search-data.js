@@ -447,7 +447,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project/";
             },},{id: "projects-ecuprog",
           title: 'ECUProg',
-          description: "a project with a background image and giscus comments",
+          description: "Senior ECU Programmer at Negar-Khodro| Developer of ECUProg v2 – Advanced Automotive Programming Tool",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
