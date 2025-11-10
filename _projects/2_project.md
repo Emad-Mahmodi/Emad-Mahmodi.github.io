@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ECUProg
-description: Senior ECU Programmer at Negar-Khodro| Developer of ECUProg v2 – Advanced Automotive Programming Tool
+description: Senior ECU Programmer & Security Expert at Negar-Khodro| Developer of ECUProg v2 – Advanced Automotive Programming Tool
 img: assets/img/prog1.PNG
 importance: 2
 category: work
@@ -11,14 +11,14 @@ giscus_comments: true
 <div class="text-center mb-5 p-4 bg-gradient-primary text-white rounded shadow-lg" style="background: linear-gradient(135deg, #a0bcf2ff, #a0bcf2ff);">
   <h1 class="display-5 fw-bold">ECUProg <span class="text-warning">v2</span></h1>
   <p class="lead mb-1">Advanced Automotive ECU Programming Suite</p>
-  <p class="mb-0">Developed by <strong>Emad Mahmodi</strong> – Senior ECU Programmer at <a href="https://negarkhodro.com" class="text-white text-decoration-underline">Negar-Khodro</a></p>
+  <p class="mb-0">Designed & Secured by <strong>Emad Mahmodi</strong> – Senior ECU Programmer at <a href="https://negarkhodro.com" class="text-white text-decoration-underline">Negar-Khodro</a></p>
 </div>
 
 ---
 
 ## About ECUProg
 
-**ECUProg v2** is the **next-generation automotive programming platform** I designed and developed at **نگارخودرو**, powering the **ECUPROG 2 hardware device** — a professional tool used in **over 5,000 workshops** across Iran and exported to **10+ countries**.
+**ECUProg v2** is the **next-generation automotive programming platform** I designed and developed at **Negar-Khodro**, powering the **ECUPROG 2 hardware device** — a professional tool used in **over 5,000 workshops** across Iran and exported to **10+ countries**.
 
 Rewritten from legacy Delphi to **modern C/C++17 + Qt 6**, ECUProg delivers **real-time performance**, **zero-downtime updates**, and **unmatched protocol support**.
 
@@ -188,7 +188,7 @@ Rewritten from legacy Delphi to **modern C/C++17 + Qt 6**, ECUProg delivers **re
 
 <!-- عنوان بخش -->
 <h2 style="font-family: Tahoma, sans-serif; color: #2c3e50; margin-bottom: 15px; text-align: right;">
-    Technical Highlights (C++ & Qt)
+    Technical Highlights (C/C++ & Qt/QML/Widget)
 </h2>
 
 <!-- بلوک کد -->
@@ -271,3 +271,59 @@ Rewritten from legacy Delphi to **modern C/C++17 + Qt 6**, ECUProg delivers **re
 </ul>
 
 
+<!-- عنوان جدول -->
+<h2 style="font-family: Tahoma, sans-serif; color: #2c3e50; margin-bottom: 15px; text-align: right; font-size: 20px;">
+    Performance Optimization (Before vs After)
+</h2>
+
+<!-- جدول -->
+<table style="
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    border-collapse: collapse;
+    direction: rtl;
+    text-align: right;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+">
+    <!-- هدر جدول -->
+    <thead>
+        <tr style="background-color: #e9ecef; color: #495057;">
+            <th style="padding: 12px 15px; border-bottom: 2px solid #ced4da; text-align: center;">Improvement</th>
+            <th style="padding: 12px 15px; border-bottom: 2px solid #ced4da; text-align: center;">ECUProg v2 (C++/Qt)</th>
+            <th style="padding: 12px 15px; border-bottom: 2px solid #ced4da; text-align: center;">Legacy (Delphi)</th>
+            <th style="padding: 12px 15px; border-bottom: 2px solid #ced4da; text-align: right;">Metric</th>
+        </tr>
+    </thead>
+    <!-- بدنه جدول -->
+    <tbody>
+        <tr style="background-color: #ffffff;">
+            <td style="padding: 10px 15px; color: #1e7e34; font-weight: bold; text-align: center;">68% faster</td>
+            <td style="padding: 10px 15px; text-align: center;">~6 min</td>
+            <td style="padding: 10px 15px; text-align: center;">~25 min</td>
+            <td style="padding: 10px 15px; font-weight: bold;">ECU Flash Time</td>
+        </tr>
+        <tr style="background-color: #f8f9fa;">
+            <td style="padding: 10px 15px; color: #1e7e34; font-weight: bold; text-align: center;">49% less</td>
+            <td style="padding: 10px 15px; text-align: center;">92 MB</td>
+            <td style="padding: 10px 15px; text-align: center;">180 MB</td>
+            <td style="padding: 10px 15px; font-weight: bold;">Memory Usage</td>
+        </tr>
+        <tr style="background-color: #ffffff;">
+            <td style="padding: 10px 15px; color: #1e7e34; font-weight: bold; text-align: center;">62% reduction</td>
+            <td style="padding: 10px 15px; text-align: center;">32%</td>
+            <td style="padding: 10px 15px; text-align: center;">85%</td>
+            <td style="padding: 10px 15px; font-weight: bold;">CPU Load (JTAG)</td>
+        </tr>
+        <tr style="background-color: #f8f9fa;">
+            <td style="padding: 10px 15px; color: #1e7e34; font-weight: bold; text-align: center;">98% fewer crashes</td>
+            <td style="padding: 10px 15px; text-align: center;">0.03%</td>
+            <td style="padding: 10px 15px; text-align: center;">1.8%</td>
+            <td style="padding: 10px 15px; font-weight: bold;">Crash Rate</td>
+        </tr>
+    </tbody>
+</table>
