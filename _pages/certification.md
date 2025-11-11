@@ -30,6 +30,16 @@ nav_order: 7
         </a>
     </div>
 </div>
+<div class="row mt-5 justify-content-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        <a href="{{ '/assets/img/MSc thesis Advisor Certification.jpg' | relative_url }}" 
+           data-lightbox="certifications" 
+           data-title="ICCKE Conference Certificate">
+            {% include figure.liquid loading="eager" path="assets/img/MSc thesis Advisor Certification.jpg" class="img-fluid rounded z-depth-1 zoom" %}
+        </a>
+    </div>
+
+</div>
 
 <!-- Lightbox Script + Custom Clean Style -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
