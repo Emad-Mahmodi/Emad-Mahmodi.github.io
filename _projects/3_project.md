@@ -3,7 +3,7 @@ layout: page
 title: ECU Emulatore
 description: This project is a PISAD-based (PISAD PPC ECU Full Simulatore) full simulation operation for the complete ECU dump of vehicles with PowerPC (PPC) architecture.
 img: assets/img/reverse.png
-redirect: https://unsplash.com
+# redirect: https://unsplash.com
 importance: 3
 category: work
 ---
