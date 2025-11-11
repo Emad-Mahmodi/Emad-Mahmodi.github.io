@@ -53,7 +53,7 @@ ninja.data = [{
           },
         },{id: "nav-certification",
           title: "Certification",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          description: "Professional certifications and credentials",
           section: "Navigation",
           handler: () => {
             window.location.href = "/Certification/";
