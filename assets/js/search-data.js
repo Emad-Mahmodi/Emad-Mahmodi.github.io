@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "This page is the Emad Mahmoudi&#39;s publiction",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
         },{id: "nav-projects",
           title: "projects",
           description: "This section showcases my portfolio of industrial and academic projects..",
