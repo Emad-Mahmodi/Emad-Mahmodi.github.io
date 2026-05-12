@@ -6,76 +6,88 @@ img: assets/img/reverse.png
 # redirect: https://unsplash.com
 importance: 3
 category: work
+
+
+---
+layout: page
+title: PISAD ECU Full Simulator
+description: <i class="fa-solid fa-microchip"></i> A high-level PowerPC (PPC) emulator for ECU firmware analysis & security reverse engineering.
+img: assets/img/reverse.png
+importance: 1
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<style>
+  .project-icon {
+    margin-right: 10px;
+  }
+  .icon-hardware { color: #5dade2; } /* آبی روشن */
+  .icon-security { color: #e74c3c; } /* قرمز */
+  .icon-analysis { color: #2ecc71; } /* سبز */
+  .icon-workflow { color: #f39c12; } /* نارنجی */
+</style>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## <i class="fa-solid fa-info-circle project-icon icon-hardware"></i>Introduction
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This project is a dedicated simulation environment for **PISAD-based ECUs** utilizing the **PowerPC (PPC)** architecture. Unlike generic emulators, this tool is optimized for automotive firmware, allowing researchers to load full ECU dumps and interact with the virtual processor at a hardware-abstracted level.
+
+<div class="alert alert-info">
+  <strong><i class="fa-solid fa-lightbulb"></i> The Challenge:</strong> 
+  Reverse engineering automotive ECUs often requires bypassing hardware security. This simulator provides a safe <strong>sandbox</strong> to test authentication algorithms without risking physical hardware.
+</div>
+
+---
+
+## <i class="fa-solid fa-cogs project-icon icon-analysis"></i>Technical Features & Interface
+
+### 1. Register & Variable Management
+This is the core interface for defining the initial state. Users can manually override or initialize specific processor registers and system variables to simulate different vehicle conditions or cheat security checks.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/registers_input.png" title="Register Input Interface" class="img-fluid rounded z-depth-1 shadow-lg" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+<div class="caption text-info">
+    <i class="fa-solid fa-pen-to-square"></i> <strong>Register Management:</strong> Pre-defining initial states before execution.
 </div>
+
+### 2. Live CPU State Monitoring
+During execution, the simulator provides a real-time view of the **PPC Registers (<code>GPRs</code>, <code>SPRs</code>)**. This is essential for tracing security-critical functions.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-10 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/cpu_state.png" title="Current CPU State" class="img-fluid rounded z-depth-1 shadow-lg" %}
+    </div>
+</div>
+<div class="caption text-danger">
+    <i class="fa-solid fa-eye"></i> <strong>CPU State:</strong> Values of registers during a security access routine.
+</div>
+
+---
+
+## <i class="fa-solid fa-route project-icon icon-workflow"></i>Reverse Engineering Workflow
+
+<div class="alert alert-warning">
+  <i class="fa-solid fa-key"></i> <strong>Key Insight:</strong> 
+  By pausing execution at specific offsets (e.g., authentication starts), one can analyze constants used in the <strong>Seed/Key</strong> transformation (SID 0x27).
+</div>
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/memory_view.png" title="Memory View" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">Memory mapping of Flash.</div>
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/variables_monitor.png" title="Variables Monitor" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">Monitoring software variables.</div>
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## <i class="fa-solid fa-shield-alt project-icon icon-security"></i>Key Capabilities
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+* <i class="fa-solid fa-check text-success"></i> <strong>Architecture:</strong> Full PowerPC (PPC) instruction set interpretation.
+* <i class="fa-solid fa-network-wired text-primary"></i> <strong>Diagnostics:</strong> UDS/KWP2000 protocol simulation.
+* <i class="fa-solid fa-brain text-warning"></i> <strong>Verification:</strong> Perfect for analyzing algorithms in ME17, Changan, or Lamari ECUs.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+---
