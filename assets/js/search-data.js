@@ -412,6 +412,31 @@ ninja.data = [{
           description: "This project is a PISAD-based (PISAD PPC ECU Full Simulatore) full simulation operation for the complete ECU dump of vehicles with PowerPC (PPC) architecture.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-vulnerability-ecu-tools",
+          title: 'Vulnerability ECU Tools',
+          description: "A technical audit of automotive diagnostic software layers, focusing on anti-debugging techniques, V-table obfuscation, and runtime memory protection using x32dbg.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
+            },},{id: "projects-security-auditing-amp-data-extraction-of-launch-diagnostic-systems",
+          title: 'Security Auditing &amp;amp; Data Extraction of Launch Diagnostic Systems',
+          description: "Investigating vulnerabilities in Android-based OBD2 scanners and intercepting Bluetooth VCI communications.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_project/";
+            },},{id: "projects-automotive-protocol-analyzer-amp-monitoring-tool",
+          title: 'Automotive Protocol Analyzer &amp;amp; Monitoring Tool',
+          description: "A high-performance monitoring app built with Qt/QML and Python to analyze Saleae Logic exports for UDS and OBD-II diagnostics.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_project/";
+            },},{id: "projects-advanced-reverse-engineering-amp-hardware-interfacing-of-lamari-du7z-ecu",
+          title: 'Advanced Reverse Engineering &amp;amp; Hardware Interfacing of Lamari DU7Z ECU',
+          description: "A comprehensive study on multi-core firmware architecture, security access bypassing, and live CAN-Bus monitoring for ECU diagnostics.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_project/";
+            },},{id: "projects-reverse-engineering-of-mse2-engine-control-unit",
+          title: 'Reverse Engineering of MSE2 Engine Control Unit',
+          description: "Full-stack analysis of Bajaj MSE2 ECU, from hardware interfacing to line-by-line binary de-obfuscation and logic reconstruction.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_project/";
             },},{
         id: 'social-email',
         title: 'email',
