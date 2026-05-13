@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Senior Software Developer & Reverse Engineering Researcher | <a href='https://www.linkedin.com/in/emad-mahmodi-638531b4/'>LinkedIn</a> | <a href='https://scholar.google.com/citations?user=ZrJX2noAAAAJ'>Google Scholar</a>
+subtitle: Senior Software Developer & AI Engineering in computer security Researcher.     <a href='https://scholar.google.com/citations?user=ZrJX2noAAAAJ'>Google Scholar</a>
 
 profile:
   align: right
@@ -10,7 +10,6 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>📧 emad.mahmodi.eng@gmail.com</p>
-    <p>📧 Emad.mahmodi@mail.um.ac.ir</p>
     <p>📱 +98 911 300 2150</p>
     <p>📍 Amol, Mazandaran, Iran</p>
 
