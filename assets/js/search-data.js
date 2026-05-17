@@ -390,7 +390,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-negaremap",
+          section: "News",},{id: "projects-recopilot-reverse-engineering-copilot-in-binary-analysis",
+          title: 'ReCopilot — Reverse Engineering Copilot in Binary Analysis',
+          description: "An expert LLM for binary analysis tasks including function name recovery, variable type inference, struct recovery, decompilation, and code summarization.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_project/";
+            },},{id: "projects-negaremap",
           title: 'Negaremap',
           description: "A professional and specialized Iranian software for ECU remapping (Remap) and vehicle tuning.",
           section: "Projects",handler: () => {
