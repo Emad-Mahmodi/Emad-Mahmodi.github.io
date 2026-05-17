@@ -430,6 +430,11 @@ ninja.data = [{
           description: "Full-stack analysis of Bajaj MSE2 ECU, from hardware interfacing to line-by-line binary de-obfuscation and logic reconstruction.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
+            },},{id: "projects-llm-assisted-binary-code-understanding-amp-reverse-engineering",
+          title: 'LLM-Assisted Binary Code Understanding &amp;amp; Reverse Engineering',
+          description: "Benchmarking and developing RAG pipelines for automated binary analysis and assembly-to-C translation using LLMs.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_project/";
             },},{
         id: 'social-email',
         title: 'email',
