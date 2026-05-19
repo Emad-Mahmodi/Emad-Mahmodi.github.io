@@ -405,9 +405,9 @@ ninja.data = [{
           description: "Senior ECU Programmer &amp; Security Expert at Negar-Khodro| Developer of ECUProg v2 – Advanced Automotive Programming Tool",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-ecu-emulatore",
-          title: 'ECU Emulatore',
-          description: "This project is a PISAD-based (PISAD PPC ECU Full Simulatore) full simulation operation for the complete ECU dump of vehicles with PowerPC (PPC) architecture.",
+            },},{id: "projects-pisad-ecu-full-simulator",
+          title: 'PISAD ECU Full Simulator',
+          description: "A high-fidelity PowerPC (PPC) emulator for full ECU firmware analysis, automotive security research, and Seed/Key reverse engineering.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-vulnerability-ecu-tools",
