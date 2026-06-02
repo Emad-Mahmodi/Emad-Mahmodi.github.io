@@ -102,7 +102,7 @@
       ]
     },
     {
-      "name": "Greenchall",
+      "name": "", //Greenchall
       "position": "Senior C++/HPC Developer",
       "startDate": "2022-01-01",
       "endDate": "2023-01-01",
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "name": "NIUniverse & Rahgozin Rayaneh",
+      "name": "NIUniverse",
       "position": "Senior System Programmer",
       "startDate": "2020-01-01",
       "endDate": "2022-01-01",
