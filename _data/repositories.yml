@@ -4,11 +4,8 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - Emad-Mahmodi/phishing_dataset_algorithms
+  - Emad-Mahmodi/gpu-graph-study
+  - Emad-Mahmodi/adaptive-ids-generalization
+  - Emad-Mahmodi/binary-rag-copilot
   - Emad-Mahmodi/AdaptiveLarning
-  - Emad-Mahmodi/Socket_programming
-  - Emad-Mahmodi/AES
-
-
-
-
+  - Emad-Mahmodi/phishing_dataset_algorithms

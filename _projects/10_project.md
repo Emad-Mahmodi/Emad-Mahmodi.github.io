@@ -235,11 +235,21 @@ patterns, which is exactly why a model that <em>reads</em> the disassembly is
 needed — motivating the LLM row.
 </div>
 
-## <i class="fa-solid fa-forward" style="color: #16a085;"></i> Next Steps for My Baseline
+## <i class="fa-solid fa-person-digging" style="color: #f39c12;"></i> Work in Progress
 
-- Plug in a real base model (Qwen2.5-Coder on my local GPU via Ollama) to fill the LLM row with a genuine number.
-- Add a second task (variable-type inference or one-line summarization).
-- Evaluate on a larger labeled corpus of binaries so the metrics become statistically meaningful.
+Three extensions are actively underway to turn this proof-of-concept into a meaningful study:
+
+<div class="row mt-2">
+    <div class="col-sm mt-3 mt-md-0">
+        <span class="tech-badge" style="background-color:#f39c12;">🚧 In Progress</span>
+    </div>
+</div>
+
+1. **Plug in a real LLM.** Wiring **Qwen2.5-Coder** (ReCopilot's own base family) through **Ollama on my local NVIDIA T600 GPU**, to fill the LLM row of the comparison table with a genuine number — so the claim becomes concrete: *"context + prompting alone reaches X% semantic accuracy, versus the 60% call-pattern lower bound."*
+2. **Add a second task.** Extending the pipeline from function-name recovery to a second ReCopilot task — **variable-type inference** or **one-line function summarization** — moving from one task to two on the same context-retrieval backbone.
+3. **Evaluate on a larger corpus.** Running the study over **many symbol-bearing binaries** instead of the demo pair, so the metrics become statistically meaningful rather than illustrative. The harness already accepts multiple corpus/test binaries (`--corpus a b c --test d`).
+
+Progress is tracked in the [repository roadmap](https://github.com/Emad-Mahmodi/binary-rag-copilot#roadmap).
 
 ---
 
