@@ -390,9 +390,9 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-recopilot-reverse-engineering-copilot-in-binary-analysis",
-          title: 'ReCopilot — Reverse Engineering Copilot in Binary Analysis',
-          description: "An expert LLM for binary analysis tasks including function name recovery, variable type inference, struct recovery, decompilation, and code summarization.",
+          section: "News",},{id: "projects-binary-analysis-llm-copilot-studying-recopilot-amp-a-lightweight-rag-baseline",
+          title: 'Binary-Analysis LLM Copilot — Studying ReCopilot &amp;amp; a Lightweight RAG Baseline',
+          description: "A study of ReCopilot (Chen et al., 2025) — an expert LLM for binary analysis — together with my own independent, lightweight retrieval-augmented (RAG) reimplementation for function-name recovery.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project/";
             },},{id: "projects-negaremap",
