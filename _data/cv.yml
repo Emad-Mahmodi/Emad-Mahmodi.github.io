@@ -2,96 +2,130 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Emad Mahmodi
+    - name: Location
+      value: Amol, Mazandaran, Iran
+    - name: Email
+      value: emad.mahmodi.eng@gmail.com
     - name: Languages
-      value: English, German
+      value: Persian (native), English (professional)
+    - name: Links
+      value: <a href="https://github.com/Emad-Mahmodi">GitHub</a> · <a href="https://emad-mahmodi.github.io">Website</a> · <a href="https://scholar.google.com/">Google Scholar «add link»</a> · <a href="https://www.linkedin.com/in/emad-mahmodi/">LinkedIn</a>
+
+- title: Profile
+  type: list
+  contents:
+    - Software engineer and applied-ML researcher with 10+ years building production systems, spanning <b>machine learning &amp; data mining</b>, <b>algorithms &amp; high-performance computing</b>, and <b>software / security engineering</b>. Three peer-reviewed publications in anomaly detection and recommender systems.
+    - Core strength is turning hard, structured data — binaries, graphs, network traffic — into working ML and systems: from a drift-aware anomaly-detection ensemble (ESWA 2020) to GPU-accelerated graph analytics and LLM/RAG pipelines for binary analysis.
+    - Seeking research/graduate opportunities at the intersection of machine learning, algorithms, and systems — including AI for security, ML systems &amp; generalization, and data-driven scientific computing.
+
+- title: Research Interests
+  type: nested_list
+  contents:
+    - title: Machine Learning &amp; Data Mining
+      items:
+        - Anomaly detection, concept drift, and cross-domain generalization
+        - Online / streaming learning and ensemble methods
+        - Recommender systems and similarity learning
+    - title: Algorithms &amp; High-Performance Computing
+      items:
+        - Parallel &amp; GPU (CUDA / OpenMP) graph algorithms on irregular, power-law data
+        - Load balancing and performance engineering
+    - title: AI for Security &amp; Software Engineering
+      items:
+        - LLMs / RAG for binary code understanding and reverse engineering
+        - Program analysis, and ML on binary / network-security data
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.Sc. in Computer Science — Software Engineering
+      institution: Ferdowsi University of Mashhad, Iran
+      year: «start–2017»
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "Thesis: adaptive rule-based phishing detection robust to URL obfuscation and typosquatting."
+        - Led to a peer-reviewed publication in Expert Systems with Applications (2020).
+    - title: B.Sc. in «Computer / Software Engineering»
+      institution: «University name»
+      year: «start–end»
       description:
-        - Description 1.
-        - Description 2.
+        - «Optional: relevant coursework, honors, or final project.»
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Senior ECU Programmer &amp; Security Researcher
+      institution: Negar-Khodro
+      year: «20XX – Present»
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Built a high-fidelity PowerPC (PPC) ECU emulator for full firmware analysis and Seed/Key security research.
+        - Developed automotive ECU programming and remapping platforms (e.g. Negaremap) and diagnostic tooling.
+        - Reverse-engineered multi-core ECU firmware (binary de-obfuscation, logic reconstruction, CAN-bus monitoring) and built a Qt/QML + Python analyzer for UDS / OBD-II protocols.
+        - Prototyped an LLM/RAG pipeline for assembly-to-C translation and automated binary understanding.
+    - title: «Earlier role — e.g. Software Engineer / Researcher»
+      institution: «Company / Lab»
+      year: «start–end»
       description:
-        - Description 1.
-        - Description 2.
+        - «One or two lines on ML, algorithms, or software-engineering work.»
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Publications
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: A drift-aware adaptive method based on minimum uncertainty for anomaly detection in social networking
+      institution: Expert Systems with Applications (Elsevier)
+      year: 2020
+      description:
+        - E. Mahmodi, H. Sadoghi Yazdi, A. Ghaemi Bafghi.
+        - "doi.org/10.1016/j.eswa.2020.113881"
+    - title: "UDIS: Enhancing collaborative filtering with fusion of dimensionality reduction and semantic similarity"
+      institution: Electronics (MDPI)
+      year: 2024
+      description:
+        - H. Koohi, Z. Kobti, T. Farzi, E. Mahmodi.
+        - "doi.org/10.3390/electronics13204073"
+    - title: A novel trust computation method based on user ratings to improve the recommendation
+      institution: International Journal of Engineering
+      year: 2020
+      description:
+        - R. Barzegar Nozari, H. Koohi, E. Mahmodi.
+        - "doi.org/10.5829/ije.2020.33.03c.02"
 
-- title: Honors and Awards
+- title: Selected Open-Source Projects
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: <a href="https://github.com/Emad-Mahmodi/gpu-graph-study">GPU-Accelerated Graph Analytics</a>
+      year: 2026
+      description:
+        - Reproducible empirical study of GPU acceleration (BFS, PageRank, WCC, Louvain) on power-law security graphs — C++17, OpenMP, CUDA.
+    - title: <a href="https://github.com/Emad-Mahmodi/adaptive-ids-generalization">Cross-Domain IDS Generalization</a>
+      year: 2026
+      description:
+        - PyTorch reimplementation of my drift-aware ensemble, evaluated under real distribution shift (NSL-KDD) — a 21-point in-domain→cross-domain generalization gap quantified.
+    - title: <a href="https://github.com/Emad-Mahmodi/binary-rag-copilot">Context-Augmented RAG for Binary Analysis</a>
+      year: 2026
+      description:
+        - Lightweight retrieval-augmented pipeline for binary function-name recovery; independent take on the ReCopilot idea, no model training.
 
-- title: Academic Interests
+- title: Technical Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Languages
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - C / C++ · Python · Java · MATLAB · Assembly (PowerPC / x86)
+    - title: Machine Learning &amp; Data
       items:
-        - Description 1.
-        - Description 2.
+        - PyTorch · scikit-learn · anomaly detection · concept drift · ensemble methods · RAG / LLM pipelines · pandas / NumPy
+    - title: Algorithms &amp; HPC
+      items:
+        - CUDA · OpenMP · parallel graph algorithms · performance engineering · data structures
+    - title: Systems &amp; Security
+      items:
+        - Reverse engineering · symbolic execution (SymCC / SymQEMU) · binary &amp; program analysis · CAN / UDS / OBD-II · Qt/QML
+    - title: Tools
+      items:
+        - Git · CMake · Linux · IDA Pro / Ghidra · Docker «if applicable»
 
-- title: Other Interests
+- title: Honors &amp; Service
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - «Optional: awards, scholarships, reviewing, teaching assistantships, competition rankings — add any you have.»
