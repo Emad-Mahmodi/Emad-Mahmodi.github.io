@@ -10,23 +10,23 @@
     - name: Languages
       value: Persian (native), English (professional)
     - name: Links
-      value: <a href="https://github.com/Emad-Mahmodi">GitHub</a> · <a href="https://emad-mahmodi.github.io">Website</a> · <a href="https://scholar.google.com/">Google Scholar «add link»</a> · <a href="https://www.linkedin.com/in/emad-mahmodi/">LinkedIn</a>
+      value: <a href="https://github.com/Emad-Mahmodi">GitHub</a> · <a href="https://emad-mahmodi.github.io">Website</a> · <a href="https://scholar.google.com/citations?user=ZrJX2noAAAAJ">Google Scholar</a> · <a href="https://www.linkedin.com/in/emad-mahmodi/">LinkedIn</a>
 
 - title: Profile
   type: list
   contents:
-    - Software engineer and applied-ML researcher with 10+ years building production systems, spanning <b>machine learning &amp; data mining</b>, <b>algorithms &amp; high-performance computing</b>, and <b>software / security engineering</b>. Three peer-reviewed publications in anomaly detection and recommender systems.
+    - 10+ years across <b>software engineering</b>, <b>data science</b>, <b>data engineering</b>, and <b>security</b> — with three peer-reviewed publications in machine learning (Google Scholar h-index 3, 47 citations).
     - Core strength is turning hard, structured data — binaries, graphs, network traffic — into working ML and systems: from a drift-aware anomaly-detection ensemble (ESWA 2020) to GPU-accelerated graph analytics and LLM/RAG pipelines for binary analysis.
     - Seeking research/graduate opportunities at the intersection of machine learning, algorithms, and systems — including AI for security, ML systems &amp; generalization, and data-driven scientific computing.
 
 - title: Research Interests
   type: nested_list
   contents:
-    - title: Machine Learning &amp; Data Mining
+    - title: Machine Learning &amp; Data Science
       items:
         - Anomaly detection, concept drift, and cross-domain generalization
-        - Online / streaming learning and ensemble methods
-        - Recommender systems and similarity learning
+        - Online / streaming learning, ensemble methods, deep learning
+        - Recommender systems, pattern recognition, and similarity learning
     - title: Algorithms &amp; High-Performance Computing
       items:
         - Parallel &amp; GPU (CUDA / OpenMP) graph algorithms on irregular, power-law data
@@ -35,38 +35,54 @@
       items:
         - LLMs / RAG for binary code understanding and reverse engineering
         - Program analysis, and ML on binary / network-security data
+        - Data engineering &amp; pipelines for large-scale, structured data
 
 - title: Education
   type: time_table
   contents:
     - title: M.Sc. in Computer Science — Software Engineering
       institution: Ferdowsi University of Mashhad, Iran
-      year: «start–2017»
+      year: 2014 – 2017
       description:
         - "Thesis: adaptive rule-based phishing detection robust to URL obfuscation and typosquatting."
         - Led to a peer-reviewed publication in Expert Systems with Applications (2020).
-    - title: B.Sc. in «Computer / Software Engineering»
-      institution: «University name»
-      year: «start–end»
+    - title: B.Sc. in Computer Engineering — Software
+      institution: Shomal University, Amol, Iran
+      year: 2008 – 2013
       description:
-        - «Optional: relevant coursework, honors, or final project.»
+        - "Relevant coursework: Artificial Intelligence, Algorithms Design, Software Engineering, Databases, Compiler Design, Operating Systems, Computer Architecture."
 
 - title: Experience
   type: time_table
   contents:
-    - title: Senior ECU Programmer &amp; Security Researcher
-      institution: Negar-Khodro
-      year: «20XX – Present»
+    - title: Software Engineer &amp; Security Researcher
+      institution: Negar-Khodro (Negarkhodro Co.)
+      year: Nov 2022 – Present
       description:
-        - Built a high-fidelity PowerPC (PPC) ECU emulator for full firmware analysis and Seed/Key security research.
-        - Developed automotive ECU programming and remapping platforms (e.g. Negaremap) and diagnostic tooling.
-        - Reverse-engineered multi-core ECU firmware (binary de-obfuscation, logic reconstruction, CAN-bus monitoring) and built a Qt/QML + Python analyzer for UDS / OBD-II protocols.
-        - Prototyped an LLM/RAG pipeline for assembly-to-C translation and automated binary understanding.
-    - title: «Earlier role — e.g. Software Engineer / Researcher»
-      institution: «Company / Lab»
-      year: «start–end»
+        - Built a high-fidelity PowerPC (PPC) ECU emulator for full firmware analysis and Seed/Key security research; developed ECU programming / remapping platforms (e.g. Negaremap).
+        - Reverse-engineered multi-core ECU firmware (binary de-obfuscation, CAN-bus monitoring) and built a Qt/QML + Python analyzer for UDS / OBD-II diagnostics.
+        - Prototyped an LLM / RAG pipeline for assembly-to-C translation and automated binary understanding (C++, Python).
+    - title: Machine Learning Researcher &amp; Software Engineer
+      institution: Shomal University, Amol
+      year: Jan 2017 – Jul 2024 (part-time)
       description:
-        - «One or two lines on ML, algorithms, or software-engineering work.»
+        - Applied machine-learning research alongside C++ / data-science software development.
+    - title: Software Engineer &amp; Data Scientist
+      institution: Novel Information Universe, Tehran
+      year: Apr 2020 – Jul 2023
+      description:
+        - Back-end and C++ development, data science, and LLM / RAG / prompt-engineering work.
+    - title: Software Engineer
+      institution: International Education Platform (IEP Canada Inc.) — remote
+      year: Jan 2019 – Oct 2019
+      description:
+        - Full-time software engineering for an international education platform.
+    - title: R&amp;D Programmer &amp; Data Scientist
+      institution: Ferdowsi University of Mashhad — DCSL &amp; Pattern Recognition Lab
+      year: 2014 – 2020
+      description:
+        - Research &amp; development in the Data and Communication Security Lab (DCSL) and Pattern Recognition Lab (PRL): data mining, anomaly detection, and recommender systems (C++, Python).
+        - This work underpins my ESWA (2020) and recommender-system publications.
 
 - title: Publications
   type: time_table
@@ -112,9 +128,12 @@
     - title: Languages
       items:
         - C / C++ · Python · Java · MATLAB · Assembly (PowerPC / x86)
-    - title: Machine Learning &amp; Data
+    - title: Machine Learning &amp; Data Science
       items:
         - PyTorch · scikit-learn · anomaly detection · concept drift · ensemble methods · RAG / LLM pipelines · pandas / NumPy
+    - title: Data Engineering
+      items:
+        - SQL · data pipelines &amp; ETL · large-scale structured / tabular data
     - title: Algorithms &amp; HPC
       items:
         - CUDA · OpenMP · parallel graph algorithms · performance engineering · data structures
@@ -123,9 +142,9 @@
         - Reverse engineering · symbolic execution (SymCC / SymQEMU) · binary &amp; program analysis · CAN / UDS / OBD-II · Qt/QML
     - title: Tools
       items:
-        - Git · CMake · Linux · IDA Pro / Ghidra · Docker «if applicable»
+        - Git · CMake · Linux · IDA Pro / Ghidra
 
 - title: Honors &amp; Service
   type: list
   contents:
-    - «Optional: awards, scholarships, reviewing, teaching assistantships, competition rankings — add any you have.»
+    - Reviewer, International Conference on Computer and Knowledge Engineering (ICCKE), 2020.
