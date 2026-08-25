@@ -107,14 +107,14 @@
       ]
     },
     {
-      "name": "Greenchall",
-      "position": "Senior C++ / HPC Developer",
-      "startDate": "2022-01-01",
-      "endDate": "2023-01-01",
-      "summary": "High-performance computing and embedded AI.",
+      "name": "Shomal University, Amol",
+      "position": "Lecturer & M.Sc. Thesis Advisor — Computer Engineering",
+      "startDate": "2017-01-01",
+      "endDate": "2024-07-01",
+      "summary": "Part-time academic role in the Department of Computer Engineering; applied machine-learning research and teaching.",
       "highlights": [
-        "High-Performance Computing: optimized matrix operations with SIMD (AVX2/SSE) and template meta-programming for real-time sensing data.",
-        "Embedded AI: ported road-mapping inference models to NVIDIA Jetson Nano using OpenCL for GPU acceleration."
+        "Taught the graduate course 'Principles of Data Mining' (2nd semester, 2019–2020).",
+        "Advised two M.Sc. theses on recommender systems — group recommendation via leader/member influence, and collaborative filtering with dimensionality reduction & semantic methods; both students co-authored publications with me."
       ]
     },
     {
