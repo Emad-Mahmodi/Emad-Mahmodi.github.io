@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Senior Software Developer & AI Engineering in computer security Researcher.     <a href='https://scholar.google.com/citations?user=ZrJX2noAAAAJ'>Google Scholar</a>
+subtitle: Software Engineer · Data Scientist · Security & Reverse-Engineering Researcher.     <a href='https://scholar.google.com/citations?user=ZrJX2noAAAAJ'>Google Scholar</a>
 
 profile:
   align: right
@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-A results-driven Senior Software Engineer and Reverse Engineering Researcher with 10+ years of experience in high-performance computing, automotive embedded systems, and AI-driven cybersecurity. Proven expertise in firmware analysis (TriCore, PowerPC), binary de-obfuscation, and the integration of LLMs with automated diagnostic tools. Published researcher in reputable journals with a focus on anomaly detection and system security.
+I am a software engineer and applied-ML researcher with 10+ years spanning **software engineering, data science, high-performance computing, and security**. My work turns hard, structured data — binaries, graphs, and network traffic — into working machine learning and systems, and I have three peer-reviewed ML publications in anomaly detection and recommender systems. My applied background runs deep in automotive embedded systems and reverse engineering (firmware analysis on TriCore and PowerPC, binary de-obfuscation, and LLM/RAG-assisted diagnostics).
 
 My research interests span **AI in Cybersecurity** (leveraging LLMs and RAG for automated binary analysis), **Binary Reverse Engineering** of automotive ECUs, **Data Science & Anomaly Detection** for high-frequency data streams, and **Systems Security** including anti-debugging and hardware-level vulnerability research, and Recommendation system .
 
