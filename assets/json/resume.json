@@ -44,7 +44,7 @@
       "studyType": "M.Sc.",
       "startDate": "2014-01-01",
       "endDate": "2017-01-01",
-      "score": "16.71/20 (final year)",
+      "score": "15.09/20",
       "courses": [
         "Thesis: Adaptive rule-based phishing detection against URL obfuscation (Grade: 18/20)",
         "Supervisors: Dr. Hadi Sadoghi Yazdi, Dr. Abbas Ghaemi Bafghi"
@@ -56,9 +56,9 @@
       "studyType": "B.Sc.",
       "startDate": "2008-01-01",
       "endDate": "2013-02-01",
-      "score": "17.14/20 (final year)",
+      "score": "14.02/20",
       "courses": [
-        "Final project: Integrated online sales management system (Grade: 20/20)"
+        "Final project: Design and development of a machine learning-based recommender system for personalizing user experience in e-commerce websites (Grade: 20/20)"
       ]
     }
   ],
