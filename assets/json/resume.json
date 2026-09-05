@@ -32,10 +32,18 @@
     ]
   },
   "interests": [
-    { "name": "Machine Learning & Data Science: anomaly detection, concept drift, cross-domain generalization, and recommender systems." },
-    { "name": "Algorithms & High-Performance Computing: parallel and GPU (CUDA/OpenMP) algorithms on irregular, power-law data." },
-    { "name": "AI for Cybersecurity: leveraging LLMs and RAG for automated binary analysis and firmware documentation." },
-    { "name": "Binary Reverse Engineering: analysis of automotive ECUs (ISA reconstruction, Seed/Key bypass, checksum extraction)." }
+    {
+      "name": "Machine Learning & Data Science: anomaly detection, concept drift, cross-domain generalization, and recommender systems."
+    },
+    {
+      "name": "Algorithms & High-Performance Computing: parallel and GPU (CUDA/OpenMP) algorithms on irregular, power-law data."
+    },
+    {
+      "name": "AI for Cybersecurity: leveraging LLMs and RAG for automated binary analysis and firmware documentation."
+    },
+    {
+      "name": "Binary Reverse Engineering: analysis of automotive ECUs (ISA reconstruction, Seed/Key bypass, checksum extraction)."
+    }
   ],
   "education": [
     {
@@ -70,7 +78,7 @@
       "summary": "H. Koohi, Z. Kobti, T. Farzi, E. Mahmodi."
     },
     {
-      "name": "A drift aware adaptive method based on minimum uncertainty for anomaly detection in data stream with skewed distribution",
+      "name": "A drift aware adaptive method based on minimum uncertainty for anomaly detection in social networking",
       "publisher": "Expert Systems with Applications, Elsevier",
       "releaseDate": "2020",
       "summary": "E. Mahmodi, H. S. Yazdi, A. G. Bafghi."
@@ -97,10 +105,11 @@
   "work": [
     {
       "name": "Negar-Khodro",
-      "position": "Senior Software Developer & Lead Reverse Engineer",
-      "startDate": "2022-01-01",
+      "position": "Head of Security & Software Team · Lead Reverse Engineer",
+      "startDate": "2020-01-01",
       "summary": "Architected ECUProg v2: a comprehensive automotive programming platform in C++17 and Qt 6. Optimized memory footprint by 49% and reduced JTAG overhead by 62%.",
       "highlights": [
+        "Team Leadership: lead the security and software team, setting technical direction across the product line while personally leading firmware reverse engineering.",
         "Firmware Reconstruction: led reverse-engineering efforts for TriCore (Infineon) and PowerPC (VLE) architectures; reconstructed logic for diagnostic services (UDS/KWP2000).",
         "Tuning & Remapping: designed 'Negaremap', a native Persian remapping platform with automated table identification and checksum-correction algorithms.",
         "AI Automation: prototyped an LLM/RAG pipeline and authored custom Ghidra/IDA Pro plugins to accelerate binary analysis of automotive firmware."
@@ -130,12 +139,12 @@
     },
     {
       "name": "Ferdowsi University of Mashhad — DCSL & Pattern Recognition Lab",
-      "position": "R&D Programmer / Data Scientist",
+      "position": "Research Member — Pattern Recognition Lab & Data and Communication Security Lab (DCSL)",
       "startDate": "2015-01-01",
-      "endDate": "2020-01-01",
-      "summary": "Research and development in the Data & Communication Security Lab (DCSL) and Pattern Recognition Lab (PRL).",
+      "summary": "Continuing member of both labs since my M.Sc.: Prof. Hadi Sadoghi Yazdi's Pattern Recognition Lab (PRL) and Prof. Abbas Ghaemi Bafghi's Data and Communication Security Lab (DCSL).",
       "highlights": [
-        "Built data-mining, anomaly-detection, and recommender-system pipelines (C++, Python, SQL) underpinning the ESWA (2020) and IJE (2020) publications."
+        "Built data-mining, anomaly-detection, and recommender-system pipelines (C++, Python, SQL) underpinning the ESWA (2020) and IJE (2020) publications.",
+        "Ongoing collaboration on the phishing-detection work currently under review at Future Generation Computer Systems."
       ]
     }
   ],
@@ -145,7 +154,7 @@
       "url": "https://github.com/Emad-Mahmodi/gpu-graph-study",
       "description": "Reproducible study of GPU acceleration for BFS, PageRank, WCC, and Louvain on power-law security graphs — C++17, OpenMP, CUDA.",
       "highlights": [
-        "Tiered baseline-to-CUDA methodology with a correctness oracle; measured OpenMP thread-scaling (up to 6x) on real hardware."
+        "Tiered baseline-to-CUDA methodology with a sequential correctness oracle and CI-enforced validation; RMAT s18 benchmark (262k vertices, 8.4M edges, max degree 59,714 vs mean 32). Parallel and CUDA tiers in progress."
       ]
     },
     {
@@ -162,6 +171,15 @@
       "description": "Lightweight retrieval-augmented pipeline for binary function-name recovery; an independent take on the ReCopilot idea, with no model training.",
       "highlights": [
         "Tool-independent PLT→GOT→symbol call-context extraction; pluggable LLM backends (mock/OpenAI/Ollama) with an honest method comparison."
+      ]
+    },
+    {
+      "name": "SymCC / SymQEMU / SymCC-RT — upstream contributions (EURECOM S3)",
+      "url": "https://github.com/eurecom-s3/symcc",
+      "description": "Five bug-fix patches submitted upstream to EURECOM's concolic-execution toolchain, found while adapting it as the symbolic-execution backend for PowerPC ECU firmware analysis. All currently open, pending maintainer review.",
+      "highlights": [
+        "symcc: ABI mismatch — runtime parameters declared as i1 instead of int (issue #175); unclean 32-bit `taken` value passed to _sym_push_path_constraint (issue #83).",
+        "symcc-rt: Z3 reference-count leak in the simple backend. symqemu: NULL-pointer dereference in sym_movcond_internal, plus a README build-path correction."
       ]
     },
     {
@@ -190,34 +208,79 @@
   "skills": [
     {
       "name": "Languages",
-      "keywords": ["C/C++17/20", "Python", "Java", "MATLAB", "Assembly (TriCore, PowerPC, x86)"]
+      "keywords": [
+        "C/C++17/20",
+        "Python",
+        "Java",
+        "MATLAB",
+        "Assembly (TriCore, PowerPC, x86)"
+      ]
     },
     {
       "name": "Machine Learning & Data Science",
-      "keywords": ["PyTorch", "scikit-learn", "anomaly detection", "concept drift", "ensemble methods", "LLM fine-tuning / RAG", "pandas / NumPy"]
+      "keywords": [
+        "PyTorch",
+        "scikit-learn",
+        "anomaly detection",
+        "concept drift",
+        "ensemble methods",
+        "LLM fine-tuning / RAG",
+        "pandas / NumPy"
+      ]
     },
     {
       "name": "Algorithms & HPC",
-      "keywords": ["CUDA", "OpenMP", "SIMD (AVX2/SSE)", "parallel graph algorithms", "performance engineering"]
+      "keywords": [
+        "CUDA",
+        "OpenMP",
+        "SIMD (AVX2/SSE)",
+        "parallel graph algorithms",
+        "performance engineering"
+      ]
     },
     {
       "name": "Data Engineering",
-      "keywords": ["SQL", "data pipelines & ETL", "large-scale structured data"]
+      "keywords": [
+        "SQL",
+        "data pipelines & ETL",
+        "large-scale structured data"
+      ]
     },
     {
       "name": "Reverse Engineering & Security",
-      "keywords": ["Ghidra", "IDA Pro", "x32dbg", "Radare2", "binary diffing", "UDS / CAN-Bus / OBD-II"]
+      "keywords": [
+        "Ghidra",
+        "IDA Pro",
+        "x32dbg",
+        "Radare2",
+        "binary diffing",
+        "UDS / CAN-Bus / OBD-II"
+      ]
     },
     {
       "name": "Software Engineering",
-      "keywords": ["Qt/QML", "Git", "CMake", "CI/CD", "Linux"]
+      "keywords": [
+        "Qt/QML",
+        "Git",
+        "CMake",
+        "CI/CD",
+        "Linux"
+      ]
     }
   ],
   "certificates": [
-    { "name": "Machine Learning (Stanford)" },
-    { "name": "IBM Data Science" },
-    { "name": "LPIC-1/2 Linux Professional" },
-    { "name": "Expert Instructor: Data Mining and Machine Learning (Shomal University)" }
+    {
+      "name": "Machine Learning (Stanford)"
+    },
+    {
+      "name": "IBM Data Science"
+    },
+    {
+      "name": "LPIC-1/2 Linux Professional"
+    },
+    {
+      "name": "Expert Instructor: Data Mining and Machine Learning (Shomal University)"
+    }
   ],
   "volunteer": [
     {
@@ -239,7 +302,13 @@
     }
   ],
   "languages": [
-    { "language": "Persian", "fluency": "Native" },
-    { "language": "English", "fluency": "Advanced (TOEFL candidate — scheduled 2026)" }
+    {
+      "language": "Persian",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced (TOEFL candidate — scheduled 2026)"
+    }
   ]
 }
