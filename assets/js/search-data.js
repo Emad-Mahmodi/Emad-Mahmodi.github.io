@@ -405,6 +405,16 @@ ninja.data = [{
           description: "A PyTorch reimplementation of my drift-aware, uncertainty-weighted online ensemble (ESWA 2020), evaluated under real distribution shift — trained on one attack distribution, tested on another.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/13_project/";
+            },},{id: "projects-rl-guided-fuzzing-for-binary-vulnerability-detection-an-open-reimplementation-and-13-agent-study-of-vsgfuzz",
+          title: 'RL-Guided Fuzzing for Binary Vulnerability Detection — an Open Reimplementation and 13-Agent Study...',
+          description: "An end-to-end open reimplementation of VSGFuzz (Array, 2025) — graph-embedding vulnerability prediction, block-value seed scoring, and reinforcement-learned mutation scheduling — together with the controlled multi-seed benchmark the paper never ran: thirteen RL agents on one MDP, one reward, the same seeds.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/14_project-1/";
+            },},{id: "projects-rl-guided-fuzzing-for-binary-vulnerability-detection-an-open-reimplementation-and-13-agent-study-of-vsgfuzz",
+          title: 'RL-Guided Fuzzing for Binary Vulnerability Detection — an Open Reimplementation and 13-Agent Study...',
+          description: "An end-to-end open reimplementation of VSGFuzz (Array, 2025) — graph-embedding vulnerability prediction, block-value seed scoring, and reinforcement-learned mutation scheduling — together with the controlled multi-seed benchmark the paper never ran: thirteen RL agents on one MDP, one reward, the same seeds.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/14_project/";
             },},{id: "projects-negaremap",
           title: 'Negaremap',
           description: "A professional and specialized Iranian software for ECU remapping (Remap) and vehicle tuning.",
