@@ -397,7 +397,7 @@ ninja.data = [{
               window.location.href = "/projects/10_project/";
             },},{id: "projects-gpu-accelerated-graph-analytics-for-irregular-security-graphs",
           title: 'GPU-Accelerated Graph Analytics for Irregular Security Graphs',
-          description: "A reproducible empirical study of GPU acceleration strategies (BFS, PageRank, WCC, Louvain) on skewed, power-law graphs — from a sequential C++ baseline through OpenMP to optimized and load-balanced CUDA, with every speedup attributed to one named technique.",
+          description: "A reproducible empirical study of GPU acceleration strategies (BFS, PageRank, WCC, Louvain) on skewed, power-law graphs — five optimization tiers from sequential C++ to load-balanced CUDA, benchmarked from 8M to 268M edges, with every speedup attributed to one named technique and every negative result kept.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_project/";
             },},{id: "projects-cross-domain-generalization-of-anomaly-detection-on-network-intrusion-data",
