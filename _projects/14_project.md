@@ -1,9 +1,9 @@
 ---
 layout: page
-title: RL-Guided Fuzzing for Binary Vulnerability Detection — an Open Reimplementation and 13-Agent Study of VSGFuzz
+title: RL-Guided Fuzzing for Binary Vulnerability Detection — an Independent Reimplementation and 13-Agent Study of VSGFuzz
 description: >
   <i class="fa-solid fa-bug"></i>
-  An end-to-end open reimplementation of VSGFuzz (Array, 2025) — graph-embedding
+  An end-to-end independent reimplementation of VSGFuzz (Array, 2025) — graph-embedding
   vulnerability prediction, block-value seed scoring, and reinforcement-learned
   mutation scheduling — together with the controlled multi-seed benchmark the
   paper never ran: thirteen RL agents on one MDP, one reward, the same seeds.
@@ -47,8 +47,7 @@ So I re-derived the whole method from the text with open tooling, and then asked
 
 <p class="mt-3">
   <i class="fa-brands fa-github"></i>
-  <strong>Code:</strong>
-  <a href="https://github.com/Emad-Mahmodi/vsgfuzz-rl">github.com/Emad-Mahmodi/vsgfuzz-rl</a>
+  <strong>Code:</strong> to be released together with the paper, which is being prepared for submission.
 </p>
 
 ---
@@ -103,7 +102,7 @@ Two findings, stated at the confidence the data actually supports:
 
 ## <i class="fa-solid fa-chart-simple" style="color: #9b59b6;"></i> Why DDPG Collapses — a measurable mechanism, not a guess
 
-The failure is not bad luck; it is visible in what the policy *does*. Operator-distribution entropy (1 = uniform over the fourteen operators, 0 = always the same one) puts DDPG at **0.10**: 96% of its steps go to two operators, and *which* two differs by seed.
+The failure is not bad luck; it is visible in what the policy *does*. Operator-distribution entropy (1 = uniform over the fourteen operators, 0 = always the same one) puts DDPG at **0.10**: in every one of its ten runs, about 96% of its steps go to a single operator, and *which* operator differs from seed to seed.
 
 <div class="row mt-4">
     <div class="col-sm-12 mt-3 mt-md-0">
@@ -114,7 +113,7 @@ The failure is not bad luck; it is visible in what the policy *does*. Operator-d
     <strong>Figure 2:</strong> Operator entropy against unique crash sites. DDPG sits alone in the bottom-left corner — a collapsed policy and the worst outcome. Read the trend carefully, though: across these six agents the rank correlation is positive but <strong>not significant</strong> (Spearman ρ = 0.55, p = 0.19), and <code>random</code> has maximal entropy while sitting mid-table. Collapse explains DDPG; staying exploratory is not sufficient on its own.
 </div>
 
-This is exactly the failure mode you would predict from pushing a **continuous-control algorithm through a non-differentiable argmax** onto fourteen discrete operators — and it is precisely the gap the paper never explains. Both plausible readings are implemented (`ddpg` with a straight-through Gumbel-softmax relaxation, `ddpg_argmax` as the literal reading), and both land at the bottom of the table.
+The paper never says how a **continuous-control algorithm** chooses among fourteen **discrete** operators, so both plausible readings are implemented: `ddpg`, with a straight-through Gumbel-softmax relaxation, and `ddpg_argmax`, the literal argmax. They fail in different ways. The Gumbel-softmax variant is the one that collapses (entropy 0.10). The argmax variant keeps spreading its choices (entropy 0.91) and still finishes 12th of 13 in the screening sweep, just above the collapsed one. Collapse explains the worst result, but not all of DDPG's weakness.
 
 The stateless bandits (`ucb1`, `thompson`, `exp3`) are the most informative baseline in the set for a different reason: they see **no state at all**. When a bandit ties with a deep agent, the deep policy is not using the state — which suggests most of the work is being done by the seed pool's score-ranked selection rather than by the mutation policy.
 
@@ -159,7 +158,7 @@ structure2vec graph embeddings over ACFGs (8 attributes per basic block), traine
     </div>
 </div>
 <div class="caption">
-    <strong>Figure 4:</strong> Validation accuracy holds near 0.91 while validation loss climbs — the classifier's <em>decisions</em> stay stable even as its confidence overfits. On a held-out program it never saw: <strong>93.3% function-level accuracy</strong>, mean <code>VP</code> of 0.85 on vulnerable functions against 0.06 on secure ones.
+    <strong>Figure 4:</strong> Validation accuracy holds near 0.91 while validation loss climbs — the classifier's <em>decisions</em> stay stable even as its confidence overfits. On a held-out program it never saw, it classifies <strong>19 of 20 functions correctly (95%)</strong>, with a mean <code>VP</code> of 0.82 on vulnerable functions against 0.00 on secure ones.
 </div>
 
 The paper reports 99.8% accuracy on Juliet. That number is reachable here too — the synthetic generator's `signal_strength` knob controls how separable the two classes are, and at 1.0 the task is nearly trivial. **The default was deliberately set to keep the predictor imperfect**, because a perfect predictor would make the ablation above meaningless. The `oracle` setting then measures the ceiling separately.
@@ -192,9 +191,9 @@ The methodology is the point of the project as much as the pipeline is.
 * **Two-stage design.** A wide screening sweep (13 agents × 3 seeds) carries *no* significance testing and is used only to choose which agents to confirm; a separate confirmatory run (6 agents × 10 seeds) carries every statistical claim. Testing all thirteen at once would make the comparison family large enough that correction swallows any real effect.
 * **Non-parametric statistics.** Vargha–Delaney A₁₂ effect sizes with Holm-corrected p-values — the standard for fuzzing evaluation, where crash counts are neither normal nor independent across seeds.
 * **Multiple seeds, always.** The paper reports single runs with no variance; fuzzing is highly stochastic. Everything here is mean ± std, plus the number of runs that found *any* crash and the executions-to-first-crash.
-* **Committed raw results.** Every run's full JSON timeline is in the repository, so the published numbers can be checked without re-running anything.
-* **A preprint that cannot drift.** Every number in the accompanying `paper/` is generated from the run JSON by a script rather than typed in.
-* **74 tests**, all runnable without a GPU or any binary tooling, and a one-command `make quick` that reproduces a small end-to-end result in about 20 seconds.
+* **Raw results kept.** Every run's full JSON timeline is kept with the code and will be released with it, so the numbers can be checked without re-running anything.
+* **Generated tables.** The result tables in the accompanying paper are generated from the run JSON by a script rather than typed in.
+* **A test suite** that runs without a GPU or any binary tooling, and a one-command `make quick` that reproduces a small end-to-end result in about 20 seconds.
 
 ---
 
@@ -205,8 +204,7 @@ The default target is a **synthetic program with executable ACFG semantics** —
 Nor is this a refutation of the paper's real-world numbers, which were measured on real binaries with tooling that could not be reproduced here. It is a demonstration that the *algorithmic* choice at the centre of the method does not survive a controlled comparison — which is a claim about method design, and a useful one either way.
 
 <p class="mt-3">
-  Full paper mapping, all 13 documented ambiguities, architecture notes, extensions and the real-binary guide:
-  <a href="https://github.com/Emad-Mahmodi/vsgfuzz-rl">github.com/Emad-Mahmodi/vsgfuzz-rl</a>
+  The full paper mapping, all 13 documented ambiguities, architecture notes, extensions and the real-binary guide will be released with the code.
 </p>
 
 ---
@@ -217,4 +215,4 @@ Nor is this a refutation of the paper's real-world numbers, which were measured 
 > G. Cao, Y. Ma, M. Geng — *Array*, 27 (2025) 100458
 > [doi:10.1016/j.array.2025.100458](https://doi.org/10.1016/j.array.2025.100458) (CC BY)
 
-This repository is an **independent reimplementation** re-derived from the text and is not affiliated with the paper's authors. Code released under MIT. Only fuzz software you own or are authorised to test.
+This is an **independent reimplementation** re-derived from the text and is not affiliated with the paper's authors. The code will be released under the MIT licence. Only fuzz software you own or are authorised to test.
