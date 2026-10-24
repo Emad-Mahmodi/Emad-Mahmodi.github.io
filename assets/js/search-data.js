@@ -412,7 +412,7 @@ ninja.data = [{
               window.location.href = "/projects/14_project/";
             },},{id: "projects-negaremap",
           title: 'Negaremap',
-          description: "A professional and specialized Iranian software for ECU remapping (Remap) and vehicle tuning.",
+          description: "A professional and specialized Iranian software for ECU calibration (remapping), intended for lawful and emissions-compliant use.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-ecuprog",
@@ -422,17 +422,17 @@ ninja.data = [{
               window.location.href = "/projects/2_project/";
             },},{id: "projects-pisad-ecu-full-simulator",
           title: 'PISAD ECU Full Simulator',
-          description: "A high-fidelity PowerPC (PPC) emulator for full ECU firmware analysis, automotive security research, and Seed/Key reverse engineering.",
+          description: "A high-fidelity PowerPC (PPC) emulator for full ECU firmware analysis, defensive automotive security research, and assessment of SecurityAccess (SID 0x27) mechanisms.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-vulnerability-ecu-tools",
-          title: 'Vulnerability ECU Tools',
-          description: "A technical audit of automotive diagnostic software layers, focusing on anti-debugging techniques, V-table obfuscation, and runtime memory protection using x32dbg.",
+            },},{id: "projects-security-assessment-of-software-protection-in-diagnostic-tools",
+          title: 'Security Assessment of Software Protection in Diagnostic Tools',
+          description: "Assessing protection layers in automotive diagnostic software using x32dbg and anti-tamper analysis.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-security-auditing-amp-data-extraction-of-launch-diagnostic-systems",
-          title: 'Security Auditing &amp;amp; Data Extraction of Launch Diagnostic Systems',
-          description: "Investigating vulnerabilities in Android-based OBD2 scanners and intercepting Bluetooth VCI communications.",
+            },},{id: "projects-security-assessment-of-diagnostic-scanner-ecosystems",
+          title: 'Security Assessment of Diagnostic Scanner Ecosystems',
+          description: "Defensive assessment of the security posture of Android-based OBD2 scanners and their Bluetooth VCI communications.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
             },},{id: "projects-automotive-protocol-analyzer-amp-monitoring-tool",
@@ -440,14 +440,14 @@ ninja.data = [{
           description: "A high-performance monitoring app built with Qt/QML and Python to analyze Saleae Logic exports for UDS and OBD-II diagnostics.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-advanced-reverse-engineering-amp-hardware-interfacing-of-lamari-du7z-ecu",
-          title: 'Advanced Reverse Engineering &amp;amp; Hardware Interfacing of Lamari DU7Z ECU',
-          description: "A comprehensive study on multi-core firmware architecture, security access bypassing, and live CAN-Bus monitoring for ECU diagnostics.",
+            },},{id: "projects-advanced-reverse-engineering-amp-hardware-interfacing-of-a-multi-core-automotive-ecu",
+          title: 'Advanced Reverse Engineering &amp;amp; Hardware Interfacing of a Multi-Core Automotive ECU',
+          description: "A defensive study of multi-core firmware architecture, SecurityAccess (UDS 0x27) robustness, and live CAN-Bus monitoring for ECU diagnostics.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
-            },},{id: "projects-reverse-engineering-of-mse2-engine-control-unit",
-          title: 'Reverse Engineering of MSE2 Engine Control Unit',
-          description: "Full-stack analysis of Bajaj MSE2 ECU, from hardware interfacing to line-by-line binary de-obfuscation and logic reconstruction.",
+            },},{id: "projects-reverse-engineering-of-an-automotive-engine-control-unit",
+          title: 'Reverse Engineering of an Automotive Engine Control Unit',
+          description: "Defensive full-stack analysis of an engine ECU, from hardware interfacing to line-by-line binary analysis and logic understanding.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
             },},{id: "projects-llm-assisted-binary-code-understanding-amp-reverse-engineering",
