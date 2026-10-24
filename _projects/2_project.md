@@ -42,7 +42,7 @@ Rewritten from legacy Delphi to **modern C/C++17 + Qt 6**, ECUProg delivers **re
         <li>Designed multi-protocol engine (12+ automotive standards)</li>
         <li>Reduced ECU reflash time by 68% using parallel BDM/JTAG</li>
         <li>Built OTA update system with encryption & rollback</li>
-        <li>Integrated TachoSoft Pro + Auto Dump Decoder</li>
+        <li>Integrated Auto Dump Decoder</li>
         <li>Mentored 3 developers on embedded systems & GUI</li>
     </ul>
 
@@ -90,38 +90,18 @@ Rewritten from legacy Delphi to **modern C/C++17 + Qt 6**, ECUProg delivers **re
           <!-- 4 -->
           <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
             <i class="bi bi-caret-down-fill me-2 text-primary"></i>
-            Advanced and specialized download, conversion, tuning, and remapping via OBD without needing a dump — intelligently with automatic identification
+            Advanced and specialized download, conversion and calibration (remapping) via OBD without needing a dump — intelligently with automatic identification
           </li>
 
           <!-- 5 -->
           <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
             <i class="bi bi-caret-down-fill me-2 text-primary"></i>
-            Specialized and advanced software for modifying ECU tables to perform various professional and advanced tuning manually
+            Specialized and advanced software for modifying ECU tables to perform professional calibration manually, for lawful and emissions-compliant use
           </li>
 
-          <!-- 6 -->
-          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
-            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
-            Odometer correction for ECU and instrument cluster via JTAG, OBDII, KTAG, MBUS, DENSO, and other methods
-          </li>
 
-          <!-- 7 -->
-          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
-            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
-            Advanced Tachosoft software included
-          </li>
 
-          <!-- 8 -->
-          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
-            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
-            Reading switch codes from ECUs via JTAG, ISP EEPROM, OBD, and other methods
-          </li>
 
-          <!-- 9 -->
-          <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
-            <i class="bi bi-caret-down-fill me-2 text-primary"></i>
-            Programming and clearing of domestic and international airbag modules
-          </li>
 
           <!-- 10 -->
           <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">

@@ -4,7 +4,7 @@ title: PISAD ECU Full Simulator
 description: >
   <i class="fa-solid fa-microchip"></i>
   A high-fidelity PowerPC (PPC) emulator for full ECU firmware analysis,
-  automotive security research, and Seed/Key reverse engineering.
+  defensive automotive security research, and assessment of SecurityAccess (SID 0x27) mechanisms.
 img: assets/img/reverse.png
 importance: 1
 category: work
@@ -68,7 +68,7 @@ category: work
 
 ## <i class="fa-solid fa-info-circle icon-hardware"></i> Introduction
 
-This project is a **dedicated simulation environment for PISAD-based ECUs** running on the **PowerPC (PPC)** architecture — the processor family found in a wide range of automotive engine control units including ME17, Changan, and Lamari variants.
+This project is a **dedicated simulation environment for PISAD-based ECUs** running on the **PowerPC (PPC)** architecture — the processor family found in a wide range of automotive engine control units including a wide range of engine control units.
 
 Unlike generic emulators, this tool is purpose-built for **automotive firmware analysis**. It allows researchers to:
 
@@ -78,8 +78,8 @@ Unlike generic emulators, this tool is purpose-built for **automotive firmware a
 
 <div class="alert alert-info">
   <strong><i class="fa-solid fa-lightbulb"></i> The Core Challenge:</strong>
-  Reverse-engineering automotive ECUs typically means bypassing hardware security under real operating conditions — a risky and time-consuming process.
-  This simulator provides a safe <strong>sandbox</strong> where every byte of memory and every register transition is observable and controllable, enabling researchers to locate and analyse <strong>authentication algorithms (SID 0x27)</strong> without ever touching the physical ECU.
+  Assessing the security of an automotive ECU on live hardware is risky, slow and can damage the unit.
+  This simulator provides a safe <strong>sandbox</strong> where every byte of memory and every register transition is observable and controllable, enabling researchers to evaluate how <strong>SecurityAccess authentication (SID 0x27)</strong> is implemented and whether it is strong enough — so weaknesses can be found and hardened — without ever touching the physical ECU.
 </div>
 
 <span class="badge-tech">PowerPC e200 / MPC5xx</span>
@@ -197,7 +197,7 @@ The **HexView** tab renders the loaded firmware as a classic hex dump, with:
   <i class="fa-solid fa-magnifying-glass"></i>
   <strong>HexView:</strong> Raw firmware bytes of <code>Flash_AB</code> displayed from address <code>0x00000000</code>.
   The data-type selector (<code>int8</code> shown) and binary panel (right) allow rapid identification of constants,
-  calibration tables, and cryptographic seeds embedded in the ECU flash.
+  calibration tables, and constants embedded in the ECU flash.
 </div>
 
 <hr class="section-divider">
@@ -209,8 +209,8 @@ The **HexView** tab renders the loaded firmware as a classic hex dump, with:
   By placing breakpoints at the exact offset where the ECU's security access routine begins
   (typically the function that responds to UDS SID <code>0x27</code> — <em>SecurityAccess</em>),
   you can pause execution at the moment the <strong>seed</strong> is loaded into a GPR,
-  read it directly from the register panel, and step through the transformation logic
-  to recover the full <strong>Seed → Key</strong> algorithm without any firmware decryption.
+  read it from the register panel, and step through the transformation logic
+  to judge how robust the <strong>Seed → Key</strong> design is (entropy of the seed, complexity of the transformation, retry limiting) — the kind of review a vendor needs in order to harden it.
 </div>
 
 <div class="step-row"><span class="step-num">1</span>
@@ -233,13 +233,12 @@ The **HexView** tab renders the loaded firmware as a classic hex dump, with:
   directly from the left-hand register panel.</div>
 </div>
 <div class="step-row"><span class="step-num">5</span>
-  <div><strong>Step & Trace the Algorithm</strong> — Single-step through the PPC instructions, observing
-  each register mutation. The sequence of <code>ori</code>, <code>mtspr</code>, <code>li</code>, and shift
-  operations reveals the exact mathematical transformation <strong>f(seed) = key</strong>.</div>
+  <div><strong>Step & Trace the Logic</strong> — Single-step through the PPC instructions, observing
+  each register mutation, to characterise the structure of the <strong>f(seed) = key</strong> transformation.</div>
 </div>
 <div class="step-row"><span class="step-num">6</span>
-  <div><strong>Validate & Export</strong> — Replay with different seeds to confirm the recovered algorithm,
-  then export it as a standalone key-calculation script for use in diagnostic tools.</div>
+  <div><strong>Validate & Report</strong> — Replay with different seeds to confirm the observed behaviour,
+  then write up the weaknesses and hardening recommendations. No keys, algorithms or key-calculation tools are published.</div>
 </div>
 
 <hr class="section-divider">
@@ -286,8 +285,7 @@ The **HexView** tab renders the loaded firmware as a classic hex dump, with:
   <div class="col-md-6">
     <div class="feature-card">
       <h5><i class="fa-solid fa-car icon-hardware"></i> ECU Target Support</h5>
-      <p>Validated against firmware dumps from <strong>ME17</strong>, <strong>Changan</strong>,
-      and <strong>Lamari</strong> ECU families. Extendable to any PPC-based PISAD variant.</p>
+      <p>Designed for PowerPC-based ECU firmware images handled in authorised research and development. Extendable to any PPC-based PISAD variant.</p>
     </div>
   </div>
 </div>
@@ -298,7 +296,7 @@ The **HexView** tab renders the loaded firmware as a classic hex dump, with:
 
 | Use Case | How the Simulator Helps |
 |----------|------------------------|
-| **Seed/Key Algorithm Recovery** | Breakpoint at SID 0x27 handler → step through transformation → extract algorithm |
+| **SecurityAccess Strength Assessment** | Breakpoint at SID 0x27 handler → step through transformation → evaluate weaknesses and recommend hardening |
 | **Calibration Table Analysis** | HexView + data-type overlay to locate and interpret lookup tables in flash |
 | **Diagnostic Protocol Fuzzing** | Inject malformed UDS frames via CAN panel and observe firmware error handling |
 | **Firmware Validation** | Run production firmware against edge-case sensor values without hardware risk |
@@ -334,8 +332,9 @@ The **HexView** tab renders the loaded firmware as a classic hex dump, with:
 
 <div class="alert alert-danger">
   <i class="fa-solid fa-triangle-exclamation"></i> <strong>Research Use Only.</strong>
-  This simulator is intended exclusively for <strong>authorised security research, education, and firmware validation</strong>.
-  Using recovered authentication algorithms on vehicles or ECUs without the owner's explicit permission may violate
-  computer fraud and vehicle security regulations in your jurisdiction.
+  This simulator is intended exclusively for <strong>research and development carried out through lawful, authorised corporate and personal processes — defensive security research, education, and firmware validation</strong>.
+  It is not intended for, and must not be used for, circumventing access control, altering emissions, mileage or safety functions,
+  or modifying any vehicle or ECU without the owner's explicit permission — this may violate computer-misuse, copyright
+  anti-circumvention, emissions and vehicle-safety laws (for example in the US, EU and Canada).
   Always obtain proper authorisation before performing security assessments on automotive systems.
 </div>

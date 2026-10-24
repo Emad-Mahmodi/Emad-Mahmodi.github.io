@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Reverse Engineering of MSE2 Engine Control Unit
-description: <i class="fa-solid fa-motorcycle"></i> Full-stack analysis of Bajaj MSE2 ECU, from hardware interfacing to line-by-line binary de-obfuscation and logic reconstruction.
-img: assets/img/Bajaj-1.webp
+title: Reverse Engineering of an Automotive Engine Control Unit
+description: <i class="fa-solid fa-microchip"></i> Defensive full-stack analysis of an engine ECU, from hardware interfacing to line-by-line binary analysis and logic understanding.
+img: assets/img/ecu-bench-setup-2.jpg
 importance: 8
 category: work
 ---
@@ -24,7 +24,7 @@ category: work
 
 ## <i class="fa-solid fa-gauge-high" style="color: #d35400;"></i> Project Overview
 
-The **MSE2 ECU** is the central brain of many modern motorcycles, including the Bajaj Pulsar series. This project represents a complete **Security & Functional Audit** of this controller. By extracting and analyzing the firmware, I reconstructed the logic behind its safety systems, diagnostic protocols, and security handshakes.
+The **engine control unit (ECU)** is the central brain of modern vehicles. This project is a **defensive security and functional assessment** of such a controller, performed on a bench unit as research and development through lawful, authorised corporate and personal processes. By analyzing the firmware, I studied the logic behind its safety systems, diagnostic protocols, and security handshakes in order to understand how they work and where they could be strengthened. No keys, algorithms, firmware images or exploit code are published on this page.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -38,15 +38,15 @@ The **MSE2 ECU** is the central brain of many modern motorcycles, including the 
 
 ## <i class="fa-solid fa-microchip" style="color: #2c3e50;"></i> Hardware Context
 
-The research began with the physical ECU hardware. Establishing a stable bench connection was essential for capturing the firmware dump and monitoring live diagnostic traffic.
+The research began with the physical ECU hardware. Establishing a stable bench connection was essential for acquiring the firmware image for static analysis and monitoring live diagnostic traffic.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mse2.jpg" title="MSE2 ECU Hardware" class="img-fluid rounded z-depth-1 shadow-lg" style="width: 100%; height: 350px; object-fit: cover;" %}
+        {% include figure.liquid loading="eager" path="assets/img/ecu-bench-setup-2.jpg" title="ECU Hardware" class="img-fluid rounded z-depth-1 shadow-lg" style="width: 100%; height: 350px; object-fit: cover;" %}
     </div>
 </div>
 <div class="caption">
-    <strong>The Target:</strong> MSE2 ECU hardware environment used for live monitoring and firmware acquisition.
+    <strong>The Target:</strong> ECU hardware environment used for live monitoring and bench analysis.
 </div>
 
 ---
@@ -61,9 +61,9 @@ This function serves as the mastermind for ECU startup.
 - **Protocol Setup:** Initializing the **CAN network** at 500kbps and verifying memory integrity via specific markers like `0xDEADBEEF`.
 
 ### 2. Cryptographic Security Access (`sub_23D2C`)
-I performed a line-by-line de-obfuscation of the **UDS Service 0x27** handler.
-- **Seed-to-Key Transformation:** Reconstructed the mathematical model used by the ECU to generate dynamic security keys.
-- **Algorithm Analysis:** Mapping the sequential XORs and bit-shifting operations used to protect the ECU's flash memory from unauthorized access.
+I performed a line-by-line analysis of the **UDS Service 0x27** (SecurityAccess) handler to assess its design.
+- **Seed-to-Key Transformation:** Characterised the general structure of the transformation used by the ECU, in order to judge its strength.
+- **Design Review:** Reviewing the XOR and bit-shifting operations that protect the ECU's flash memory from unauthorized access, and what a stronger design would look like. Algorithm details are deliberately not published.
 
 
 
@@ -77,10 +77,15 @@ Identified as the **Fault Manager**, this routine acts as the ECU's internal doc
 
 ## <i class="fa-solid fa-terminal" style="color: #27ae60;"></i> Key Technical Accomplishments
 
-* <i class="fa-solid fa-check text-success"></i> **Binary Reconstruction:** Deciphered the logic for `0x2E` (WriteData) and `0x3D` (WriteMemory) services.
+* <i class="fa-solid fa-check text-success"></i> **Binary Analysis:** Studied the handling of the `0x2E` (WriteData) and `0x3D` (WriteMemory) services to understand which access checks protect them.
 * <i class="fa-solid fa-check text-success"></i> **Architecture Mapping:** Full understanding of the PowerPC-based execution flow and register settings.
-* <i class="fa-solid fa-check text-success"></i> **Security Auditing:** Identification of vulnerabilities in the Seed/Key exchange process.
+* <i class="fa-solid fa-check text-success"></i> **Security Assessment:** Identification of design weaknesses in the Seed/Key exchange, described at a conceptual level only, with hardening recommendations.
 
 <div class="alert alert-info">
-  <i class="fa-solid fa-lightbulb"></i> <strong>Developer Insight:</strong> This level of analysis is the prerequisite for developing custom tuning tools, flash downloaders, and security patches for automotive embedded systems.
+  <i class="fa-solid fa-lightbulb"></i> <strong>Defensive Insight:</strong> This level of analysis is what manufacturers and security teams need in order to verify access controls, harden the Seed/Key exchange, and design security patches for automotive embedded systems.
+</div>
+
+<div class="alert alert-warning">
+  <i class="fa-solid fa-triangle-exclamation"></i> <strong>Research Use Only.</strong>
+  This work is research and development carried out through lawful, authorised corporate and personal processes, on bench hardware, for defensive security and education. It is not intended for circumventing access control, altering emissions, mileage or safety functions, or modifying any vehicle without the owner's permission, which may be unlawful (for example under US, EU and Canadian law).
 </div>

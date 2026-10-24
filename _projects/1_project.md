@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Negaremap
-description: A professional and specialized Iranian software for ECU remapping (Remap) and vehicle tuning.
+description: A professional and specialized Iranian software for ECU calibration (remapping), intended for lawful and emissions-compliant use.
 #  It offers all the features of famous foreign software (such as WinOLS, ECM Titanium, etc.) with a Persian-language interface and at a much lower price, and is specifically optimized for the Iranian market.
 img: assets/img/logo.jpg
 importance: 1
@@ -78,7 +78,7 @@ Here's the code for the last row of images above:
           <!-- 2 -->
           <li class="list-group-item d-flex align-items-center py-3 bg-light text-primary fw-bold">
             <i class="bi bi-caret-down-fill me-2 text-primary"></i>
-            Full display of map tables for easy tuning
+            Full display of map tables for easy calibration
           </li>
 
           <!-- 3 -->

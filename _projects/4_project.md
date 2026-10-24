@@ -1,20 +1,9 @@
 ---
-# published: false
 layout: page
-title: Vulnerability ECU Tools
-description: A technical audit of automotive diagnostic software layers, focusing on anti-debugging techniques, V-table obfuscation, and runtime memory protection using x32dbg.
-img: assets/img/images.jfif
+title: Security Assessment of Software Protection in Diagnostic Tools
+description: <i class="fa-solid fa-shield-halved"></i> Assessing protection layers in automotive diagnostic software using x32dbg and anti-tamper analysis.
+img: assets/img/x32dbg.PNG
 importance: 4
-category: work
-
-
-
----
-layout: page
-title: Security Auditing of Diagnostic Ecosystems
-description: <i class="fa-solid fa-shield-halved"></i> Auditing protection layers in automotive software (TNM) using x32dbg and anti-tamper analysis.
-img: assets/img/images.jfif
-importance: 2
 category: work
 ---
 
@@ -35,7 +24,7 @@ category: work
 
 ## <i class="fa-solid fa-microscope" style="color: #3498db;"></i> Project Overview
 
-Reverse Engineering and Vulnerability Analysis of ECU Programming Tools: This research focuses on the technical evaluation of security mechanisms implemented in automotive diagnostic tools, specifically the **TNM** software. The project analyzes how these tools defend against reverse engineering and unauthorized tampering through advanced software protection layers.
+Defensive Analysis of the Protection of ECU Programming Tools: This research focuses on the technical evaluation of the software-protection mechanisms implemented in automotive diagnostic tools, specifically a commercial ECU programming tool, as research and development through lawful, authorised corporate and personal processes. The project analyzes how these tools defend against reverse engineering and unauthorized tampering, and what a stronger design would look like. It reports protection categories only; no bypass methods, patches or cracked software are published.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -53,20 +42,11 @@ Reverse Engineering and Vulnerability Analysis of ECU Programming Tools: This re
 ### 1. Virtual Functions & V-Table Obfuscation
 The application utilizes complex `Virtual Functions` to decouple the logic from the binary's static structure. By obfuscating the **vtable**, the software makes it significantly harder for static analysis tools to reconstruct the execution flow and call graphs.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/tnm.PNG" title="TNM Diagnostic Interface" class="img-fluid rounded z-depth-1 shadow-lg" %}
-    </div>
-</div>
-<div class="caption">
-    The TNM Diagnostic interface, used as a case study for evaluating commercial software protection.
-</div>
-
 ### 2. Memory Integrity & VirtualProtect
 A critical part of the analysis involved monitoring the Windows `VirtualProtect` API calls. This mechanism is used to dynamically change memory page permissions (e.g., flipping from PAGE_READWRITE to PAGE_EXECUTE_READ) to prevent code injection and live memory dumping during runtime.
 
 ### 3. Dynamic Analysis with x32dbg
-Using **x32dbg**, I conducted a deep-dive analysis of the software's decryption routines. By utilizing hardware breakpoints and tracing API calls, I investigated how the software handles sensitive operations like communication with the hardware dongle.
+Using **x32dbg**, I analysed how the software's protection layers behave at runtime. By utilizing hardware breakpoints and tracing API calls, I observed how the software protects sensitive operations like communication with the hardware dongle, in order to assess the strength of those protections.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">
@@ -74,7 +54,7 @@ Using **x32dbg**, I conducted a deep-dive analysis of the software's decryption 
     </div>
 </div>
 <div class="caption text-danger">
-    <strong>Debugging Session:</strong> Monitoring register states and identifying conditional jumps during the software's integrity check.
+    <strong>Debugging Session:</strong> Monitoring register states to observe how the software's integrity check behaves.
 </div>
 
 ---
@@ -96,11 +76,7 @@ The following table summarizes the observed protection layers and their effectiv
 
 To enhance the resilience of automotive diagnostic software, a multi-layered defense strategy is proposed. This includes implementing **Polymorphic Code** and **Dynamic Integrity Verification** to ensure that critical logic cannot be easily bypassed via patching.
 
-<div class="row">
-    <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/security_flow.png" title="Proposed Security Flow" class="img-fluid rounded z-depth-1 shadow-lg" %}
-    </div>
-</div>
-<div class="caption">
-    Conceptual diagram of an enhanced, multi-layered software protection architecture.
+<div class="alert alert-warning">
+  <i class="fa-solid fa-triangle-exclamation"></i> <strong>Research Use Only.</strong>
+  This is research and development carried out through lawful, authorised corporate and personal processes, on bench hardware, for defensive security and education. It is not intended for circumventing licensing or copy protection of commercial software, and no bypass instructions are provided. Reverse engineering of commercial software may be restricted by licence terms and by anti-circumvention laws (for example in the US, EU and Canada).
 </div>
